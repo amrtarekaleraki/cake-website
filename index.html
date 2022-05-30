@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cake website </title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- header section start page -->
+
+<header class="header">
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> sweets </a>
+
+    <nav class="navbar">
+        <a href="index.html">الرئيسه</a>
+        <a href="#contact">تواصل معنا</a>
+        <a href="menu.html">قائمه المنتجات</a>
+        <a href="#about">من نحن</a>
+        <a href="#review">ردود أفعال العملاء</a>
+        <a href="#secrets">الوصفات</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <div class="Expandable-Search">
+            <input type="text" class="search-result-input" placeholder="Search...">
+            <div class="search-icon" onclick="searchClicked()">
+                <i class="fas fa-search"></i></div>
+        </div>
+        <!-- <div id="search-btn" class="fas fa-search"></div> -->
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <a href="register.html"> <div id="login-btn" class="fas fa-user"></div> </a>
+    </div>
+
+
+</header>
+ 
+<!-- home section start -->
+    
+<section class="home" id="home">
+    <div class="slides-container">
+
+        <div class="slide active">
+            <div class="content">
+                <span>احصل علي افضل طعم</span>
+                <h3>خصم يصل الي 50%</h3>
+                <a href="#" class="btn">تسوق الان</a>
+            </div>
+            <div class="img">
+                <img src="images/home-img-1.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>احصل علي افضل طعم</span>
+                <h3>خصم يصل الي 50%</h3>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="img">
+                <img src="images/home-img-2.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>احصل علي افضل طعم</span>
+                <h3>خصم يصل الي 50%</h3>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="img">
+                <img src="images/home-img-3.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+    <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+
+</section>
+
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img src="images/banner-1.jpg" alt="">
+        <div class="content">
+        <span>افضل عروض</span>
+        <h3>خصم يصل الي 50%</h3>
+        <a href="#" class="btn">تسوق الان</a>
+    </div>
+    </div>
+
+    <div class="banner">
+        <img src="images/banner-2.jpg" alt="">
+        <div class="content">
+        <span>افضل عروض</span>
+        <h3>خصم يصل الي 50%</h3>
+        <a href="#" class="btn">تسوق الان</a>
+    </div>
+    </div>
+
+    <div class="banner">
+        <img src="images/banner-3.jpg" alt="">
+        <div class="content">
+        <span>افضل عروض</span>
+        <h3>خصم يصل الي 50%</h3>
+        <a href="#" class="btn">تسوق الان</a>
+    </div>
+    </div>
+
+</section>
+
+
+<!-- category start  -->
+
+<div class="heading">
+    <h1>قائمه المنتجات</h1>
+    </div>
+
+<section class="category">
+    
+<h1 class="title"> اقسام <span> المنتجات</span> <a href="menu.html">رؤيه المزيد >></a> </h1>
+
+<div class="box-container">
+
+    <a href="#" class="box">
+        <img src="images/cat-1.jpg" alt="">
+        <h3>المخبوزات</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/cat-2.jpg" alt="">
+        <h3>التورت</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/cat-3.jpg" alt="">
+        <h3>الجاتوه</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/cat-4.jpg" alt="">
+        <h3>الشوكولاته</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/cat-5.jpg" alt="">
+        <h3>الركن لشرقي</h3>
+    </a>
+
+
+</div>
+
+</section>
+
+
+<!-- products section -->
+
+<section class="products">
+    
+    <h1 class="title"> المنتجات <span>الاكثر مبيعا</span> <a href="menu.html">رؤيه المزيد >></a> </h1>
+    
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="images/product-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>تشيز كيك بالراسبرى</h3>
+                <div class="price">EGP 19.99 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="images/product-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>تورتة ميلفى مربى</h3>
+                <div class="price">EGP 19.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="images/product-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>تورته رينبو</h3>
+                <div class="price">EGP 19.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="images/product-4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>تورتة شو كراميل</h3>
+                <div class="price">EGP 19.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="images/product-5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>تورتة ويلي</h3>
+                <div class="price">EGP 19.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="images/product-6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>تارت نوتيلا</h3>
+                <div class="price">EGP 19.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="images/product-7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>تورتة بلاك فورست</h3>
+                <div class="price">EGP 19.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="img">
+                <img src="images/product-8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>تورتة اميدو شيكولاتة</h3>
+                <div class="price">EGP 19.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+</div>
+</section>
+
+
+<!-- about section start -->
+<div class="heading">
+    <h1>من نحن</h1>
+    </div>
+
+<section class="about" id="about">
+    <div class="img">
+         <img src="images/about-img.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <span>مرحبا بك في حلويات</span>
+        <h3>عن حلويات</h3>
+        <p>بدأنا سنة 1975. محل في جاردن سيتي, لابوار, كان هدفنا إنشاء أفضل سلسلة مخبوزات و حلويات في مصر مع التميز في الطعم و النكهات. كل منتج من منتجاتنا يمثلنا, بنقدمه بأفضل و أبسط طريقة تناسب كل الأذواق و ده سر تميز لابوار. كل حاجة في لابوار معمولة بعناية كاملة, من أول الكرواسون المغطي بالشوكولاتة للفطار لتورت الأعياد و المناسبات الخاصة و رمضان. و ده سر تواجد لابوار في كل التجمعات العائلية لأننا ملتزمين بالطعم الطازة و أحسن المكونات البسيطة اللي ترضي كل الأذواق. أصبح اسم لابوار يمثل حلويات و مخبوزات بالجودة </p>
+        <p>الفرنسية و الأصل المصري, توسعنا في مختلف م نسعي لمستقبل أفضل, نتوسع فيه لنواصل مهمتنا مع فريق من خبراء الغذاء الدوليين و نحتفظ بجلتطور دائم  المخبوزات و المقبلات حتي يصبح لابوار جزء من أهم لحظات الحياة</p>
+        <a href="#" class="btn">المزيد....</a>
+    </div>
+</section>
+
+<!-- gallery section start -->
+
+<section class="gallery">
+    <h1 class="title"> اشهر  <span>منتجاتنا</span> <a href="menu.html">رؤيه المزيد >></a> </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/gallery-img-1.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-2.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-3.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-4.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-5.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-6.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- client section start -->
+
+<div class="heading">
+    <h1>ردود افعال العملاء</h1>
+</div>
+
+<section class="info-container">
+
+    <div class="info">
+        <img src="images/icons-1.png" alt="">
+        <div class="content">
+            <h3>التوصيل للمنزل</h3>
+            <span>خلال 30 دقيقه</span>
+        </div>
+    </div>
+
+    <div class="info">
+        <img src="images/icons-2.png" alt="">
+        <div class="content">
+            <h3>مفتوح طوال ايام الاسبوع</h3>
+            <span>اتصل بنا </span>
+        </div>
+    </div>
+
+    <div class="info">
+        <img src="images/icons-3.png" alt="">
+        <div class="content">
+            <h3>افضل الاسعار</h3>
+            <span>دائما عروض</span>
+        </div>
+    </div>
+
+</section>
+
+<!-- review section start -->
+
+<section class="review" id="review">
+
+    <div class="box">
+        <div class="user">
+            <img src="images/pic-1.png" alt="">
+            <div class="info">
+                <h3>edward bey</h3>
+                <span>happ client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img src="images/pic-2.png" alt="">
+            <div class="info">
+                <h3>jenna bey</h3>
+                <span>happ client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img src="images/pic-3.png" alt="">
+            <div class="info">
+                <h3>edward bey</h3>
+                <span>happ client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img src="images/pic-4.png" alt="">
+            <div class="info">
+                <h3>lisa bey</h3>
+                <span>happ client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img src="images/pic-5.png" alt="">
+            <div class="info">
+                <h3>edward bey</h3>
+                <span>happ client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img src="images/pic-6.png" alt="">
+            <div class="info">
+                <h3>lalisa bey</h3>
+                <span>happ client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+</section>
+
+<!-- blog section start -->
+
+<div class="heading">
+    <h1> الوصفات</h1>
+</div>
+
+<section class="blogs" id="secrets">
+    <h1 class="title"> بعض <span>الوصفات</span> <a href="#">رؤيه المزيد >></a> </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="img">
+                <img src="images/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+            <div class="icons">
+                <a href="#"> <i class="fsa fa-calendar"></i> 12 jan, 2022 </a>
+                <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+            </div>
+             <h3>تورتة موس شيكولاتة</h3>
+             <p>اسبونج شيكولاته مع راسبرى ولوز مكرمل مغطي بكريمة موس شيكولاتة</p>
+             <a href="#" class="btn">المزيد...</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="img">
+            <img src="images/blog-2.jpg" alt="">
+        </div>
+        <div class="content">
+        <div class="icons">
+            <a href="#"> <i class="fsa fa-calendar"></i> 12 jan, 2022 </a>
+            <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+        </div>
+         <h3>تورتة موس شيكولاتة</h3>
+         <p>اسبونج شيكولاته مع راسبرى ولوز مكرمل مغطي بكريمة موس شيكولاتة</p>
+         <a href="#" class="btn">المزيد...</a>
+    </div>
+</div>
+
+<div class="box">
+    <div class="img">
+        <img src="images/blog-3.jpg" alt="">
+    </div>
+    <div class="content">
+    <div class="icons">
+        <a href="#"> <i class="fsa fa-calendar"></i> 12 jan, 2022 </a>
+        <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+    </div>
+     <h3>تورتة موس شيكولاتة</h3>
+     <p>اسبونج شيكولاته مع راسبرى ولوز مكرمل مغطي بكريمة موس شيكولاتة</p>
+     <a href="#" class="btn">المزيد...</a>
+</div>
+</div>
+
+<div class="box">
+    <div class="img">
+        <img src="images/blog-4.jpg" alt="">
+    </div>
+    <div class="content">
+    <div class="icons">
+        <a href="#"> <i class="fsa fa-calendar"></i> 12 jan, 2022 </a>
+        <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+    </div>
+     <h3>تورتة موس شيكولاتة</h3>
+     <p>اسبونج شيكولاته مع راسبرى ولوز مكرمل مغطي بكريمة موس شيكولاتة</p>
+     <a href="#" class="btn">المزيد...</a>
+</div>
+</div>
+
+<div class="box">
+    <div class="img">
+        <img src="images/blog-5.jpg" alt="">
+    </div>
+    <div class="content">
+    <div class="icons">
+        <a href="#"> <i class="fsa fa-calendar"></i> 12 jan, 2022 </a>
+        <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+    </div>
+     <h3>تورتة موس شيكولاتة</h3>
+     <p>اسبونج شيكولاته مع راسبرى ولوز مكرمل مغطي بكريمة موس شيكولاتة</p>
+     <a href="#" class="btn">المزيد...</a>
+</div>
+</div>
+
+<div class="box">
+    <div class="img">
+        <img src="images/blog-6.jpg" alt="">
+    </div>
+    <div class="content">
+    <div class="icons">
+        <a href="#"> <i class="fsa fa-calendar"></i> 12 jan, 2022 </a>
+        <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+    </div>
+     <h3>تورتة موس شيكولاتة</h3>
+     <p>اسبونج شيكولاته مع راسبرى ولوز مكرمل مغطي بكريمة موس شيكولاتة</p>
+     <a href="#" class="btn">المزيد...</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- contect section start -->
+
+<div class="heading" >
+    <h1>تواصل معنا</h1>
+</div>
+
+<section class="contact" id="contact">
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>رقم الموبايل</h3>
+            <p>+111-222-3333</p>
+            <p>+456-786-7890</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>البريد الالكتروني</h3>
+            <p>shaikhfarhan@gmail.com</p>
+            <p>xyzemail@gmail.com</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>العنوان</h3>
+            <p>mumbai, india - 401203</p>
+        </div>
+
+    </div>
+
+     <div class="row">
+         <form action="">
+             <h3> اترك رساله</h3>
+             <div class="inputBox">
+             <input type="text" placeholder="ادخل اسمك" class="box">
+             <input type="text" placeholder="ادخل البريد الالكتروني" class="box">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="ادخل رقم الموبايل" class="box">
+                <input type="text" placeholder="ادخل العنوان" class="box">
+               </div>
+               <textarea placeholder=" اترك رسالتك هنا" cols="30" rows="10"></textarea>
+               <input type="submit" value="إرسال" class="btn">
+         </form>
+             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.30826973844!2d31.417859201190275!3d31.041381421684168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2z2KfZhNmF2YbYtdmI2LHYqdiMINin2YTZhdmG2LXZiNix2KkgKNmC2LPZhSAyKdiMINin2YTZhdmG2LXZiNix2KnYjCDYp9mE2K_ZgtmH2YTZitip!5e0!3m2!1sar!2seg!4v1653839091569!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+
+</section>
+
+<div class="space"></div>
+<!-- footer section start -->
+
+
+<section class="footer">    
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+        <a href="#"> <i class="fas fa-arrow-left"></i> الرئيسه</a>
+        <a href="#"> <i class="fas fa-arrow-left"></i>المنتجات</a>
+        <a href="#"> <i class="fas fa-arrow-left"></i>من نحن</a>
+        <a href="#"> <i class="fas fa-arrow-left"></i> ردود الفعل</a>
+        <a href="#"> <i class="fas fa-arrow-left"></i>الوصفات</a>
+        <a href="#"> <i class="fas fa-arrow-left"></i>تواصل معنا</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-left"></i> طلبي </a>
+            <a href="#"> <i class="fas fa-arrow-left"></i>  العناصر المفضله </a>
+            <!-- <a href="#"> <i class="fas fa-arrow-left"></i>  عناصر </a> -->
+            <a href="#"> <i class="fas fa-arrow-left"></i>  حسابي لبشخصي </a>
+            <a href="#"> <i class="fas fa-arrow-left"></i>  سياسه الموقع </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <!-- <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a> -->
+        </div>
+
+        <div class="box">
+            <h3>عملاءنا الجدد</h3>
+            <p>تواصل معنا</p>
+            <form action="">
+            <input type="email" placeholder="ادخل البريد الالكتروني">
+            <input type="submit" value="إرسال" class="btn">
+            </form>
+            <img src="images/payment.png" class="payments" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="credit"> EDU SOFT &copy; 2022 || all rights reserved</section>
+
+
+
+    <!-- custom js file link -->
+    <script src="js/main.js"></script>
+</body>
+</html>
